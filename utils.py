@@ -23,10 +23,12 @@ def create_rllib_env(env_config: dict = {}):
             - opponent_policy: a Callable for your agent to train against. Defaults to a random policy.
     """
     if hasattr(env_config, "worker_index"):
+        base_port = env_config.get("base_port", 50039)
         env_config["worker_id"] = (
             env_config.worker_index * env_config.get("num_envs_per_worker", 1)
             + env_config.vector_index
         )
+        env_config["base_port"] = base_port
     env = soccer_twos.make(**env_config)
     # env = TransitionRecorderWrapper(env)
     if "multiagent" in env_config and not env_config["multiagent"]:

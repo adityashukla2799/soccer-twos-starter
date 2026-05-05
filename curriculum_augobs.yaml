@@ -1,0 +1,84 @@
+tasks:
+  - name: easy_center_ball
+    config_fn: none
+    ranges:
+      ball:
+        position:
+          x: [-0.5, 0.5]
+          y: [-0.5, 0.5]
+        velocity:
+          x: [0.0, 0.0]
+          y: [0.0, 0.0]
+      players:
+        0:
+          position:
+            x: [-10.0, -7.0]
+            y: [-1.5, 1.5]
+          velocity:
+            x: [0.0, 0.0]
+            y: [0.0, 0.0]
+          rotation_y: [-15.0, 15.0]
+        1:
+          position:
+            x: [-10.0, -7.0]
+            y: [-1.5, 1.5]
+          velocity:
+            x: [0.0, 0.0]
+            y: [0.0, 0.0]
+          rotation_y: [-15.0, 15.0]
+
+  - name: medium_offset_ball
+    config_fn: none
+    ranges:
+      ball:
+        position:
+          x: [-2.5, 2.5]
+          y: [-1.5, 1.5]
+        velocity:
+          x: [-0.8, 0.8]
+          y: [-0.8, 0.8]
+      players:
+        0:
+          position:
+            x: [-11.0, -5.5]
+            y: [-2.5, 2.5]
+          velocity:
+            x: [0.0, 0.0]
+            y: [0.0, 0.0]
+          rotation_y: [-35.0, 35.0]
+        1:
+          position:
+            x: [-11.0, -5.5]
+            y: [-2.5, 2.5]
+          velocity:
+            x: [0.0, 0.0]
+            y: [0.0, 0.0]
+          rotation_y: [-35.0, 35.0]
+
+  - name: harder_wide_ball
+    config_fn: none
+    ranges:
+      ball:
+        position:
+          x: [-4.5, 4.5]
+          y: [-3.0, 3.0]
+        velocity:
+          x: [-1.5, 1.5]
+          y: [-1.5, 1.5]
+      players:
+        0:
+          position:
+            x: [-12.0, -4.0]
+            y: [-3.5, 3.5]
+          velocity:
+            x: [0.0, 0.0]
+            y: [0.0, 0.0]
+          rotation_y: [-60.0, 60.0]
+        1:
+          position:
+            x: [-12.0, -4.0]
+            y: [-3.5, 3.5]
+          velocity:
+            x: [0.0, 0.0]
+            y: [0.0, 0.0]
+          rotation_y: [-60.0, 60.0]
